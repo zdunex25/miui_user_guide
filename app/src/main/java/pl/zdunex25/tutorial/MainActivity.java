@@ -23,18 +23,9 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 	
 	final Context context = this;
+	String[] countries;
 
-	String[] countries = new String[] {
-	        "Aktualizacje",
-	        "Aktywacja Wiadomości w chmurze lub dodanie lokalizacji w aplikacji Pogoda",
-	        "Brak miniatur w ostatnich aplikacjach",
-	        "Działanie aplikacji w tle",
-	        "Edycja pulpitu",
-	        "Niedziałające dymki i przejścia do aplikacji Messenger",
-	        "Oczekiwanie na Wi-Fi w Sklepie Play i innych",
-	        "Zarządzanie uprawnieniami aplikacji",
-	        "Zmieniająca się klawiatura",
-	};
+
 	 
 	// Array of integers points to images stored in /res/drawable-ldpi/
 	int[] flags = new int[]{
@@ -66,6 +57,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		countries = getResources().getStringArray(R.array.list_items);
 		
 		// Each row in the list stores country name, currency and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();

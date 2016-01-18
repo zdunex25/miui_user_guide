@@ -29,4 +29,16 @@ Warto też wyłączyć <b>oszczędzanie baterii w Ustawienia > Urządzenie > Bat
     <string name="lets_try">%1$s</string>
     <string name="lets_try2">%1$s</string>
 
+    <string-array name="list_items">
+        <item>Aktualizacje</item>
+        <item>Aktywacja Wiadomości w chmurze lub dodanie lokalizacji w aplikacji Pogoda</item>
+        <item>Brak miniatur w ostatnich aplikacjach</item>
+        <item>Działanie aplikacji w tle</item>
+        <item>Edycja pulpitu</item>
+        <item>Niedziałające dymki i przejścia do aplikacji Messenger</item>
+        <item>Oczekiwanie na Wi-Fi w Sklepie Play i innych</item>
+        <item>Zarządzanie uprawnieniami aplikacji</item>
+        <item>Zmieniająca się klawiatura</item>
+    </string-array>
+
 </resources>
