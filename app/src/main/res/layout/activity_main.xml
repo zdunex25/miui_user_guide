@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="pl.zdunex25.tutrial.MainActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/header"
+        android:background="#ff34dfa1"
+        android:orientation="horizontal"
+        android:scaleType="fitXY"
+        android:layout_width="fill_parent"
+        android:layout_height="150.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_above="@+id/content">
+        
+        <RelativeLayout
+            android:id="@+id/header_container"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+            
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:gravity="center|bottom"
+                android:text="SAMOUCZEK"
+                android:textColor="@android:color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title_summary"
+                android:layout_width="fill_parent"
+                android:layout_height="80.0dip"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:gravity="center|top"
+                android:text="Tu znajdziesz krótki poradnik z rozwiązaniami najczęstszych problemów napotkanych przez użytkowników MIUI. Warto się z nim zapoznać, aby korzystanie z telefonu nie było udręką."
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+	</RelativeLayout>
+	
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|center_horizontal">
+ 
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/bkg"/>
+	</LinearLayout>
+	
+    
+
+</LinearLayout>
