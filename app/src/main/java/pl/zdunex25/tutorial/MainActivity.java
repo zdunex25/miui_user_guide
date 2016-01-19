@@ -40,6 +40,8 @@ public class MainActivity extends Activity {
 	        R.drawable.ic_key_settings,
 			R.drawable.com_android_camera,
 			R.drawable.com_android_thememanager,
+	        R.drawable.com_miui_powerkeeper
+		
 	};
 	    
 	@Override
@@ -53,7 +55,7 @@ public class MainActivity extends Activity {
 		// Each row in the list stores country name, opisy and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
  
-        for(int i=0;i<11;i++){
+        for(int i=0;i<12;i++){
             HashMap<String, String> hm = new HashMap<String,String>();
             hm.put("txt", tutuly[i]);
             hm.put("cur", opisy[i]);
@@ -103,8 +105,11 @@ public class MainActivity extends Activity {
 					showDialog(getResources().getString(R.string.camera), getResources().getString(R.string.camera_summary));
 				} else if(tutuly[i].equals("Mieszanie elementów z różnych motywów")){
 					showDialog(getResources().getString(R.string.themes), getResources().getString(R.string.themes_summary));
-				}
-            }
+				} else if(tutuly[i].equals("Korzystanie z uprawnień root")){
+ 					showDialog(getResources().getString(R.string.root), getResources().getString(R.string.root_summary));
+ 				}
+           
+          }
         });
 	}
 
