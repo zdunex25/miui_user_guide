@@ -106,8 +106,8 @@ public class MainActivity extends Activity {
 				} else if(tutuly[i].equals("Mieszanie elementów z różnych motywów")){
 					showDialog(getResources().getString(R.string.themes), getResources().getString(R.string.themes_summary));
 				} else if(tutuly[i].equals("Korzystanie z uprawnień root")){
- +					showDialog(getResources().getString(R.string.root), getResources().getString(R.string.root_summary));
- +				}
+ 					showDialog(getResources().getString(R.string.root), getResources().getString(R.string.root_summary));
+ 				}
            
           }
         });
