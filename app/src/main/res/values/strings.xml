@@ -12,19 +12,21 @@
     <string name="permissions">Uprawnienia</string>
     <string name="missingkeys">Klawiatura</string>
     
-    <string name="updates_summary">Są wydawane planowo w każdy piątek. Nie kasują danych i nie wymagają żadnych wipe. Przed zainstalowaniem warto przeczytać wątek na forum poświęcony danej aktualizacji, aby uniknąć niepożądanych problemów i ewentualnie zrobić <b>Kopię zapasową systemu MIUI</b> (Ustawienia -> Urządzenie -> Kopia i kasowanie danych).\n\n
-W systemie MIUI Polska nie ma aktualizacji automatycznych. Aktualizacje musimy pobrać i zainstalować ręcznie. Pobierzesz je ze strony miuipolska.pl/download. <b>Pamiętaj, aby wybrać odpowiedni plik dla Twojego urządzenia!</b> Po pobraniu pliku zip, musi umieścić go w <b>pamięci wewnętrznej</b> urządzenia. Następnie włączamy aplikację <b>Aktualizacje</b>, klikamy na <b>trzykropek</b> w prawym górnym rogu i wybieramy <b>Zainstaluj aktualizację z pliku zip</b>. Pojawi nam się eksplorator plików, w którym wybieramy pobrany uprzednio plik z systemem. Telefon przechodzi w tryb recovery (na niektórych urządzeniach serii MI robi to z poziomu aplikacji), gdzie instaluje system, a następnie restartuje się do systemu.\n\n
-Obecnie zainstalowana wersja jest pokazana w aplikacji <b>Aktualizacje</b>. Format numeru wersji to (ostatnia cyfra roku).(miesiąc).(dzień)</string>
-    <string name="cloudmsg_summary">Te dwie czynności wymagają włączenia tymczasowo języka angielskiego w telefonie. Robimy to w <b>Ustawienia > Urządzenie > Język i klawiatura > Język</b>.</string>
-    <string name="recents_summary">Podgląd aplikacji w menu ostatnich aplikacji włączamy w dwóch krokach. Najpierw wchodzimy w <b>Ustawienia > Urządzenie > Bateria i wydajność > Animacje systemu</b> i wybieramy opcję <b>Pokaż animacje systemowe</b>, po czym telefon się zrestartuje. Następnie włączamy menu ostatnich aplikacji i wykonujemy gest odszczypnięcia (palce się rozchodzą).</string>
-    <string name="startup_summary">Aplikacje domyślnie nie mają uprawnień do automatycznego uruchamiania w tle, przez co nie będziemy dostawać powiadomień z aplikacji takich jak Whatsapp czy może nie zadziałać nam budzik aplikacji ze Sklepu Play jeśli aplikacja zostanie zamknięta przez system. Aby to umożliwić musimy wejść w <b>Panel sterowania > Uprawnienia > Autostart</b> i włączyć przełącznik dla żądanej aplikacji.\n\n
-Niektóre aplikacje mogą mimo tego dalej nie działać poprawnie w tle, wtedy należy uruchomić daną aplikację, kliknąć klawisz <b>Home</b>, następnie <b>Menu</b> (ostatnie aplikacje) i przeciągnąć ikonę/miniaturę danej aplikacji w dół. Po poprawnym wykonaniu powinna pojawić się kłódka w prawym górnym rogu.\n\n
-Warto też wyłączyć <b>oszczędzanie baterii w Ustawienia > Urządzenie > Bateria i wydajność > Oszczędzanie baterii</b>.</string>
-    <string name="layout_summary">Pulpit edytujemy szczypiąc go dwoma palcami na pustym miejscu pulpitu. Zmiany układu dokonujemy jednak szczypiąc go trzema palcami.</string>
-    <string name="popups_summary">Aby aktywować dymki, należy dać aplikacji <b>uprawnienie Pokaż pływające okna</b>. Następnie w <b>Ustawienia > Powiadomienia > Powiadomienia aplikacji</b> włączamy dla aplikacji przełączniki <b>Pływające okna</b> oraz <b>Na ekranie blokady</b>.</string>
-    <string name="downloads_summary">Jest to wynikiem limitu ustawionego w aplikacji <b>Pobrane</b>. Aby go znieść, musimy wejść do aplikacji i kliknąć <b>trzykropek</b> w prawym górnym rogu, <b>Ustawienia</b> i zwiększyć lub znieść <b>Limit pobierania przez sieć 3G/4G</b>.</string>
-    <string name="permissions_summary">W MIUI jest możliwość przyznawania i odbierania aplikacjom uprawnień, np. do używania GPS, czytania kontaktów itp. Domyślnie część z nich jest zablokowanych. Aby aktywować zarządzanie, wchodzimy do <b>Panel sterowania > Uprawnienia</b> i klikamy <b>zębatkę</b> w prawym górnym rogu, a następnie włączamy opcję <b>Zarządzanie uprawnieniami</b>. Po kliknięciu przycisku <b>Wstecz</b> wybieramy pozycję <b>Uprawnienia</b>, gdzie zarządzamy nimi dla widocznych tam aplikacji.</string>
-    <string name="missingkeys_summary">Jeżeli napotykasz problem z klawiaturą zmieniającą się na klawiaturę Google lub Xperia, wejdź w <b>Ustawienia > Aplikacje</b>, wybierz tę klawiaturę, z której nie korzystasz (lub obydwie) i kliknij <b>Wyłącz</b>.</string>
+    <string name="updates_summary">Aktualizacje wychodzą w każdy piątek. Nie kasują danych i nie wymagają wipe. Przed zainstalowaniem warto przeczytać wątek na forum poświęcony wersji danej aktualizacji, by uniknąć niepożądanych problemów i ewentualnie zrobić <b>Kopię zapasową systemu MIUI</b> (Ustawienia > Urządzenie > Kopia i kasowanie danych).\n\n
+W systemie MIUIPolska nie ma aktualizacji OTA, musimy pobrać i instalować nowe ROMy ręcznie. Pobieramy je ze strony <a href="https://miuipolska.pl/download/">Pobierz MIUI</a>. <b>Pamiętaj, aby wybrać odpowiedni plik dla Twojego urządzenia!</b>. Po pobraniu pliku zip trzeba umieścić go w <b>pamięci wewnętrznej</b> urządzenia. Następnie włączamy aplikację <b>Aktualizacje</b>, klikamy na <b>trzykropek</b> w prawym górnym rogu i wybieramy <b>Zainstaluj aktualizację z pliku zip</b>. Pojawi nam się eksplorator plików, w którym wybieramy pobrany uprzednio plik z systemem. Telefon przechodzi w tryb recovery (na niektórych urządzeniach serii MI robi to z poziomu aplikacji), gdzie instaluje system, a następnie restartuje się do nowej wersji systemu.\n\n
+Aktualnie posiadaną wersję sprawdzamy także w aplikacji <b>Aktualizacje</b>. Format numeru wersji to (ostatnia cyfra roku).(miesiąc).(dzień)</string>
+    <string name="cloudmsg_summary">Pogoda oraz chmura wymagają przełączenia się na języka angielskiego w telefonie. Robimy to w <b>Ustawienia > Urządzenie > Język i klawiatura > Język</b>. Po skonfigurowaniu możemy śmiało wrócić do ojczystego języka.</string>
+    <string name="recents_summary">Podgląd aplikacji w menu ostatnich aplikacji włączamy w dwóch krokach. Najpierw wchodzimy w <b>Ustawienia > Urządzenie > Bateria i wydajność > Animacje systemu</b> i wybieramy opcję <b>Pokaż animacje systemowe</b> po czym telefon się zrestartuje. Następnie włączamy menu ostatnich aplikacji i wykonujemy gest odszczypnięcia (palce się rozchodzą).</string>
+    <string name="startup_summary">Aplikacje po instalacji nie mają uprawnień do automatycznego uruchamiania w tle, przez co nie będziemy dostawać powiadomień z aplikacji takich jak Whatsapp, Facebook, Hangouts itp., a także słuchając radia internetowego w chwili wygaszenia ekranu radio w 90% przypadków zostanie zatrzymana przez system, dlatego ważne jest by umożliwić swoim apkom poprawne działanie. Udajemy się do <b>Panelu Sterowania > Uprawnienia > Autostart</b> i włączyć przełącznik dla wybranych aplikacji.\n\n
+Niektóre aplikacje mimo dodania do autostartu mogą nadal być zatrzymywane przez system (rzadko, ale jednak się zdarza) wtedy należy uruchomić daną aplikację, kliknąć przycisk <b>HOME</b>, następnie <b>MENU</b> (widok ostatnich aplikacji) i przeciągnąć ikonę/miniaturę danej aplikacji w dół. Po poprawnym wykonaniu powinna pojawić się kłódka w prawym górnym rogu podglądu aplikacji.</string>
+    <string name="layout_summary">Do edycji pulpitu możemy się dostać na dwa sposoby:\n
+	1) szczypiąc go dwoma palcami\n
+	2) przytrzymując przycisk MENU\n\n
+	Zmiany ilości ekranów bądź wyboru ekranu głównego dokonujemy szczypiąc go trzema palcami.</string>
+    <string name="popups_summary">Dobrze znany problem, łatwy do naprawienia wystarczy udać się do <b>Panelu Sterowania > Uprawnienia > Uprawnienie > Messenger</b> i odszukać i zezwolić na <b>Pokazywanie pływających okien</b>, naturalnie komunikator powinien znajdować się także w <b>Autostarcie</b>.</string>
+    <string name="downloads_summary">Jeżeli irytują Was ciągłe komunikaty o włączenie Wi-Fi by móc cokolwiek pobrać, musicie udać się do aplikacji <b>Pobrane</b>, a dokładnie do jej ustawień i tam znieść <b>limit pobierania</b> przez mobilne 3g/4g</string>
+    <string name="permissions_summary">Uprawnienie mają wpływ na każdą aplikację zainstalowaną z Play Store i są ważną częścią systemu, bez poprawnej konfiguracji potrafią znacząco utrudnić życie, ale do rzeczy. Pierwszym krokiem jest aktywacja, udajemy się do <b>Panelu Sterowania > Uprawnienia</b> i klikamy przycisk ustawień w prawym górnym rogu, następnie zaznaczamy opcję <b>Zarządzaj uprawnieniami</b>. Teraz wystarczy się cofnąć i kliknąć pozycję <b>Uprawnienia</b>, oczom ukaże się lista zainstalowanych aplikacji i teraz ważne, jeżeli używamy innej aplikacji do SMS to musimy ją znaleźć na tej liście i zezwolić na odbieranie/wysyłanie wiadomości, analogicznie postępujemy z innymi. Jako dodatkowy przykładem podam Kalendarz Google, któremu musimy zezwolić na dostęp do wydarzeń inaczej nic w nim nie zobaczymy. <b>Także jeżeli ominiecie konfigurację uprawnień to połowa jak nie więcej Waszych aplikacji nie będzie w stanie uzyskiwać danych i działać jak byście sobie tego życzyli</b>.</string>
+    <string name="missingkeys_summary">Jeżeli borykasz się z problem samo-zmieniającej się klawiatury na domyślną, bądź też zostajesz całkowicie bez klawiatury koniecznie dodaj tą, której chcesz używać do <b>Autostartu</b> w <b>Panelu sterowania</b>.</string>
     
     <string name="lets_try">%1$s</string>
     <string name="lets_try2">%1$s</string>
@@ -39,6 +41,17 @@ Warto też wyłączyć <b>oszczędzanie baterii w Ustawienia > Urządzenie > Bat
         <item>Oczekiwanie na Wi-Fi w Sklepie Play i innych</item>
         <item>Zarządzanie uprawnieniami aplikacji</item>
         <item>Zmieniająca się klawiatura</item>
+    </string-array>
+    <string-array name="list_items_summary">
+        <item>Jakiś dodatkowy opis&#8230;</item>
+        <item>Jakiś dodatkowy opis&#8230;</item>
+        <item>Jakiś dodatkowy opis&#8230;</item>
+        <item>Jakiś dodatkowy opis&#8230;</item>
+        <item>Jakiś dodatkowy opis&#8230;</item>
+        <item>Jakiś dodatkowy opis&#8230;</item>
+        <item>Jakiś dodatkowy opis&#8230;</item>
+        <item>Jakiś dodatkowy opis&#8230;</item>
+        <item>Jakiś dodatkowy opis&#8230;</item>
     </string-array>
 
 </resources>

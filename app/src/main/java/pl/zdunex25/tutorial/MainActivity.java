@@ -23,8 +23,8 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 	
 	final Context context = this;
-	String[] countries;
-
+	String[] tutuly;
+	String[] opisy;
 
 	 
 	// Array of integers points to images stored in /res/drawable-ldpi/
@@ -39,34 +39,22 @@ public class MainActivity extends Activity {
 	        R.drawable.com_miui_securitycenter,
 	        R.drawable.ic_key_settings,
 	};
-	 
-	// Array of strings to store currencies
-	String[] currency = new String[]{
-	        "Jakiś dodatkowy opis...",
-	        "Jakiś dodatkowy opis...",
-	        "Jakiś dodatkowy opis...",
-	        "Jakiś dodatkowy opis...",
-	        "Jakiś dodatkowy opis...",
-	        "Jakiś dodatkowy opis...",
-	        "Jakiś dodatkowy opis...",
-	        "Jakiś dodatkowy opis...",
-	        "Jakiś dodatkowy opis...",
-	};
 	    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		countries = getResources().getStringArray(R.array.list_items);
+		tutuly = getResources().getStringArray(R.array.list_items);
+		opisy = getResources().getStringArray(R.array.list_items_summary);
 		
-		// Each row in the list stores country name, currency and flag
+		// Each row in the list stores country name, opisy and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
  
         for(int i=0;i<9;i++){
             HashMap<String, String> hm = new HashMap<String,String>();
-            hm.put("txt", countries[i]);
-            hm.put("cur", currency[i]);
+            hm.put("txt", tutuly[i]);
+            hm.put("cur", opisy[i]);
             hm.put("flag", Integer.toString(flags[i]) );
             aList.add(hm);
         }
@@ -91,23 +79,23 @@ public class MainActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view,
 					int i, long id) {
                 // TODO Auto-generated method stub
-                if(countries[i].equals("Aktualizacje")){
+                if(tutuly[i].equals("Aktualizacje")){
                 	showDialog(getResources().getString(R.string.updates), getResources().getString(R.string.updates_summary));
-                } else if(countries[i].equals("Aktywacja Wiadomości w chmurze lub dodanie lokalizacji w aplikacji Pogoda")){
+                } else if(tutuly[i].equals("Aktywacja Wiadomości w chmurze lub dodanie lokalizacji w aplikacji Pogoda")){
                 	showDialog(getResources().getString(R.string.cloudmsg), getResources().getString(R.string.cloudmsg_summary));
-                } else if(countries[i].equals("Brak miniatur w ostatnich aplikacjach")){
+                } else if(tutuly[i].equals("Brak miniatur w ostatnich aplikacjach")){
                 	showDialog(getResources().getString(R.string.recents), getResources().getString(R.string.recents_summary));
-                } else if(countries[i].equals("Działanie aplikacji w tle")){
+                } else if(tutuly[i].equals("Działanie aplikacji w tle")){
                 	showDialog(getResources().getString(R.string.startup), getResources().getString(R.string.startup_summary));
-                } else if(countries[i].equals("Edycja pulpitu")){
+                } else if(tutuly[i].equals("Edycja pulpitu")){
                 	showDialog(getResources().getString(R.string.layout), getResources().getString(R.string.layout_summary));
-                } else if(countries[i].equals("Niedziałające dymki i przejścia do aplikacji Messenger")){
+                } else if(tutuly[i].equals("Niedziałające dymki i przejścia do aplikacji Messenger")){
                 	showDialog(getResources().getString(R.string.popups), getResources().getString(R.string.popups_summary));
-                } else if(countries[i].equals("Oczekiwanie na Wi-Fi w Sklepie Play i innych")){
+                } else if(tutuly[i].equals("Oczekiwanie na Wi-Fi w Sklepie Play i innych")){
                 	showDialog(getResources().getString(R.string.downloads), getResources().getString(R.string.downloads_summary));
-                } else if(countries[i].equals("Zarządzanie uprawnieniami aplikacji")){
+                } else if(tutuly[i].equals("Zarządzanie uprawnieniami aplikacji")){
                 	showDialog(getResources().getString(R.string.permissions), getResources().getString(R.string.permissions_summary));
-                } else if(countries[i].equals("Zmieniająca się klawiatura")){
+                } else if(tutuly[i].equals("Zmieniająca się klawiatura")){
                 	showDialog(getResources().getString(R.string.missingkeys), getResources().getString(R.string.missingkeys_summary));
                 }
             }
