@@ -38,6 +38,8 @@ public class MainActivity extends Activity {
 	        R.drawable.com_miui_fmradio,
 	        R.drawable.com_miui_securitycenter,
 	        R.drawable.ic_key_settings,
+			R.drawable.com_android_camera,
+			R.drawable.com_android_thememanager,
 	};
 	    
 	@Override
@@ -51,7 +53,7 @@ public class MainActivity extends Activity {
 		// Each row in the list stores country name, opisy and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
  
-        for(int i=0;i<9;i++){
+        for(int i=0;i<11;i++){
             HashMap<String, String> hm = new HashMap<String,String>();
             hm.put("txt", tutuly[i]);
             hm.put("cur", opisy[i]);
@@ -97,7 +99,11 @@ public class MainActivity extends Activity {
                 	showDialog(getResources().getString(R.string.permissions), getResources().getString(R.string.permissions_summary));
                 } else if(tutuly[i].equals("Zmieniająca się klawiatura")){
                 	showDialog(getResources().getString(R.string.missingkeys), getResources().getString(R.string.missingkeys_summary));
-                }
+                } else if(tutuly[i].equals("Korzystanie z trybu slow motion przy nagrywaniu wideo")){
+					showDialog(getResources().getString(R.string.camera), getResources().getString(R.string.camera_summary));
+				} else if(tutuly[i].equals("Mieszanie elementów z różnych motywów")){
+					showDialog(getResources().getString(R.string.themes), getResources().getString(R.string.themes_summary));
+				}
             }
         });
 	}

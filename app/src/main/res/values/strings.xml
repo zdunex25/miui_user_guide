@@ -29,8 +29,8 @@ Niektóre aplikacje mimo dodania do autostartu mogą nadal być zatrzymywane prz
     <string name="downloads_summary">Jeżeli irytują Was ciągłe komunikaty o włączenie Wi-Fi by móc cokolwiek pobrać, musicie udać się do aplikacji <b>Pobrane</b>, a dokładnie do jej ustawień i tam znieść <b>limit pobierania</b> przez mobilne 3g/4g</string>
     <string name="permissions_summary">Uprawnienie mają wpływ na każdą aplikację zainstalowaną z Play Store i są ważną częścią systemu, bez poprawnej konfiguracji potrafią znacząco utrudnić życie, ale do rzeczy. Pierwszym krokiem jest aktywacja, udajemy się do <b>Panelu Sterowania > Uprawnienia</b> i klikamy przycisk ustawień w prawym górnym rogu, następnie zaznaczamy opcję <b>Zarządzaj uprawnieniami</b>. Teraz wystarczy się cofnąć i kliknąć pozycję <b>Uprawnienia</b>, oczom ukaże się lista zainstalowanych aplikacji i teraz ważne, jeżeli używamy innej aplikacji do SMS to musimy ją znaleźć na tej liście i zezwolić na odbieranie/wysyłanie wiadomości, analogicznie postępujemy z innymi. Jako dodatkowy przykładem podam Kalendarz Google, któremu musimy zezwolić na dostęp do wydarzeń inaczej nic w nim nie zobaczymy. <b>Także jeżeli ominiecie konfigurację uprawnień to połowa jak nie więcej Waszych aplikacji nie będzie w stanie uzyskiwać danych i działać jak byście sobie tego życzyli</b>.</string>
     <string name="missingkeys_summary">Jeżeli borykasz się z problem samo-zmieniającej się klawiatury na domyślną, bądź też zostajesz całkowicie bez klawiatury koniecznie dodaj tą, której chcesz używać do <b>Autostartu</b> w <b>Panelu sterowania</b>.</string>
-    <string name="camera_summary">Niektóre urządzenia mają możliwość nagrywania wideo w 120 kl/s, lecz ta opcja jest dostępna tylko w rozdzielczości HD. Aby skorzystać z tej funkcji musimy najpierw zmienić rozdzielczość na HD (jeśli wcześniej korzystaliśmy z innej), wykonując w aplikacji aparatu gest od lewej do prawej i wchodząc w ustawienia. Tryb slow motion możemy aktywować wykonując ten sam gest i klikając ikonę z żółwiem</string>
-    <string name="themes_summary">Możliwe jest użycie tylko jednego elementu wchodzącego w skład motywu lub mieszanie ze sobą kilku. Aby to zrobić musimy w aplikacji motywy kliknąć ikonę ludzika znajdującą się w lewym, górnym rogu, a następnie opcję "własne", gdzie do każdego elementu systemu możemy przypisać motyw.</string>
+    <string name="camera_summary">Niektóre urządzenia mają możliwość nagrywania wideo w 120 kl/s, lecz ta opcja jest dostępna tylko w <b>rozdzielczości HD</b>. Aby skorzystać z tej funkcji musimy najpierw zmienić rozdzielczość na HD (jeśli wcześniej korzystaliśmy z innej), wykonując w aplikacji aparatu <b>gest od lewej do prawej i wchodząc w ustawienia</b>. <b>Tryb slow motion</b> możemy aktywować wykonując ten sam gest i klikając <b>ikonę z żółwiem</b>.</string>
+    <string name="themes_summary">Możliwe jest użycie tylko jednego elementu wchodzącego w skład motywu lub mieszanie ze sobą kilku. Aby to zrobić musimy w aplikacji Motywy kliknąć <b>ikonę ludzika</b> znajdującą się w lewym, górnym rogu, a następnie opcję <b>Własne</b>, gdzie do każdego elementu systemu możemy przypisać motyw.</string>
     
     <string name="lets_try">%1$s</string>
     <string name="lets_try2">%1$s</string>
@@ -49,6 +49,8 @@ Niektóre aplikacje mimo dodania do autostartu mogą nadal być zatrzymywane prz
         <item>Mieszanie elementów z różnych motywów</item>
     </string-array>
     <string-array name="list_items_summary">
+        <item>Jakiś dodatkowy opis&#8230;</item>
+        <item>Jakiś dodatkowy opis&#8230;</item>
         <item>Jakiś dodatkowy opis&#8230;</item>
         <item>Jakiś dodatkowy opis&#8230;</item>
         <item>Jakiś dodatkowy opis&#8230;</item>
