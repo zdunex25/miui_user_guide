@@ -38,6 +38,8 @@
         <item name="android:windowMinWidthMajor">100%</item>
         <item name="android:windowMinWidthMinor">100%</item>
         <item name="android:windowAnimationStyle">@style/Animation.DropDownUp</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/scrollbar_thumb_horizontal_light</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb_vertical_light</item>
     </style>
     
     <style name="Animation.DropDownUp" parent="@android:style/Animation">
