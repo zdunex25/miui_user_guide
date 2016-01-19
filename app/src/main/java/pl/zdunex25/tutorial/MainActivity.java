@@ -38,9 +38,9 @@ public class MainActivity extends Activity {
 	        R.drawable.com_miui_fmradio,
 	        R.drawable.com_miui_securitycenter,
 	        R.drawable.ic_key_settings,
-			R.drawable.com_android_camera,
-			R.drawable.com_android_thememanager,
-	        R.drawable.com_miui_powerkeeper
+	        R.drawable.com_android_camera,
+	        R.drawable.com_android_thememanager,
+	        R.drawable.com_miui_securitycenter
 		
 	};
 	    
@@ -102,13 +102,12 @@ public class MainActivity extends Activity {
                 } else if(tutuly[i].equals("Zmieniająca się klawiatura")){
                 	showDialog(getResources().getString(R.string.missingkeys), getResources().getString(R.string.missingkeys_summary));
                 } else if(tutuly[i].equals("Korzystanie z trybu slow motion przy nagrywaniu wideo")){
-					showDialog(getResources().getString(R.string.camera), getResources().getString(R.string.camera_summary));
-				} else if(tutuly[i].equals("Mieszanie elementów z różnych motywów")){
-					showDialog(getResources().getString(R.string.themes), getResources().getString(R.string.themes_summary));
-				} else if(tutuly[i].equals("Korzystanie z uprawnień root")){
- 					showDialog(getResources().getString(R.string.root), getResources().getString(R.string.root_summary));
- 				}
-           
+                	showDialog(getResources().getString(R.string.camera), getResources().getString(R.string.camera_summary));
+                } else if(tutuly[i].equals("Mieszanie elementów z różnych motywów")){
+                	showDialog(getResources().getString(R.string.themes), getResources().getString(R.string.themes_summary));
+                } else if(tutuly[i].equals("Korzystanie z uprawnień root")){
+                	showDialog(getResources().getString(R.string.root), getResources().getString(R.string.root_summary));
+                }
           }
         });
 	}
