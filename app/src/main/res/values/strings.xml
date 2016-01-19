@@ -11,6 +11,7 @@
     <string name="downloads">Pobieranie po 3G/4G</string>
     <string name="permissions">Uprawnienia</string>
     <string name="missingkeys">Klawiatura</string>
+    <string name="camera">Aparat</string>
     
     <string name="updates_summary">Aktualizacje wychodzą w każdy piątek. Nie kasują danych i nie wymagają wipe. Przed zainstalowaniem warto przeczytać wątek na forum poświęcony wersji danej aktualizacji, by uniknąć niepożądanych problemów i ewentualnie zrobić <b>Kopię zapasową systemu MIUI</b> (Ustawienia > Urządzenie > Kopia i kasowanie danych).\n\n
 W systemie MIUIPolska nie ma aktualizacji OTA, musimy pobrać i instalować nowe ROMy ręcznie. Pobieramy je ze strony <a href="https://miuipolska.pl/download/">Pobierz MIUI</a>. <b>Pamiętaj, aby wybrać odpowiedni plik dla Twojego urządzenia!</b>. Po pobraniu pliku zip trzeba umieścić go w <b>pamięci wewnętrznej</b> urządzenia. Następnie włączamy aplikację <b>Aktualizacje</b>, klikamy na <b>trzykropek</b> w prawym górnym rogu i wybieramy <b>Zainstaluj aktualizację z pliku zip</b>. Pojawi nam się eksplorator plików, w którym wybieramy pobrany uprzednio plik z systemem. Telefon przechodzi w tryb recovery (na niektórych urządzeniach serii MI robi to z poziomu aplikacji), gdzie instaluje system, a następnie restartuje się do nowej wersji systemu.\n\n
@@ -27,6 +28,7 @@ Niektóre aplikacje mimo dodania do autostartu mogą nadal być zatrzymywane prz
     <string name="downloads_summary">Jeżeli irytują Was ciągłe komunikaty o włączenie Wi-Fi by móc cokolwiek pobrać, musicie udać się do aplikacji <b>Pobrane</b>, a dokładnie do jej ustawień i tam znieść <b>limit pobierania</b> przez mobilne 3g/4g</string>
     <string name="permissions_summary">Uprawnienie mają wpływ na każdą aplikację zainstalowaną z Play Store i są ważną częścią systemu, bez poprawnej konfiguracji potrafią znacząco utrudnić życie, ale do rzeczy. Pierwszym krokiem jest aktywacja, udajemy się do <b>Panelu Sterowania > Uprawnienia</b> i klikamy przycisk ustawień w prawym górnym rogu, następnie zaznaczamy opcję <b>Zarządzaj uprawnieniami</b>. Teraz wystarczy się cofnąć i kliknąć pozycję <b>Uprawnienia</b>, oczom ukaże się lista zainstalowanych aplikacji i teraz ważne, jeżeli używamy innej aplikacji do SMS to musimy ją znaleźć na tej liście i zezwolić na odbieranie/wysyłanie wiadomości, analogicznie postępujemy z innymi. Jako dodatkowy przykładem podam Kalendarz Google, któremu musimy zezwolić na dostęp do wydarzeń inaczej nic w nim nie zobaczymy. <b>Także jeżeli ominiecie konfigurację uprawnień to połowa jak nie więcej Waszych aplikacji nie będzie w stanie uzyskiwać danych i działać jak byście sobie tego życzyli</b>.</string>
     <string name="missingkeys_summary">Jeżeli borykasz się z problem samo-zmieniającej się klawiatury na domyślną, bądź też zostajesz całkowicie bez klawiatury koniecznie dodaj tą, której chcesz używać do <b>Autostartu</b> w <b>Panelu sterowania</b>.</string>
+    <string name="camera_summary">Niektóre urządzenia mają możliwość nagrywania wideo w 120 kl/s, lecz ta opcja jest dostępna tylko w rozdzielczości HD. Aby skorzystać z tej funkcji musimy najpierw zmienić domyślną rozdzielczość Full HD na HD wykonując w aplikacji aparatu gest od lewej do prawej i wchodząc w ustawienia. Tryb slow motion możemy aktywować wykonując ten sam gest i klikając ikonę z żółwiem</string>
     
     <string name="lets_try">%1$s</string>
     <string name="lets_try2">%1$s</string>
@@ -41,6 +43,7 @@ Niektóre aplikacje mimo dodania do autostartu mogą nadal być zatrzymywane prz
         <item>Oczekiwanie na Wi-Fi w Sklepie Play i innych</item>
         <item>Zarządzanie uprawnieniami aplikacji</item>
         <item>Zmieniająca się klawiatura</item>
+        <item>Korzystanie z trybu slow motion przy nagrywaniu wideo</item>
     </string-array>
     <string-array name="list_items_summary">
         <item>Jakiś dodatkowy opis&#8230;</item>
