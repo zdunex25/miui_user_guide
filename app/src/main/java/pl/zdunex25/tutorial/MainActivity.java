@@ -7,6 +7,7 @@ import java.util.List;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.text.Html;
@@ -191,7 +192,8 @@ public class MainActivity extends Activity {
 
 					@Override
 					public void onClick(View v) {
-						Toast.makeText(MainActivity.this, "Do zrobienia", Toast.LENGTH_LONG).show();
+						Intent aboutapp= new Intent(MainActivity.this, AboutActivity.class);
+						startActivity(aboutapp);
 					}
 				});
 			}
