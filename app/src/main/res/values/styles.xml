@@ -47,4 +47,9 @@
         <item name="android:windowExitAnimation">@anim/dialog_exit</item>
     </style>
 
+    <style name="Animation.GetFromTop" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/menu_slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/menu_slide_out_top</item>
+    </style>
+
 </resources>

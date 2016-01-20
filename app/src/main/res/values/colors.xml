@@ -2,5 +2,7 @@
 <resources>
  
     <item name="pressed" type="color">#ffebebeb</item>
+    <color name="color1">#00000000</color>
+    <color name="color2">#23000000</color>
  
 </resources> 

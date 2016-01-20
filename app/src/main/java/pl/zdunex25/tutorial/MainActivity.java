@@ -7,20 +7,26 @@ import java.util.List;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.Scroller;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
@@ -50,6 +56,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		showMenu();
 
 		tutuly = getResources().getStringArray(R.array.list_items);
 		opisy = getResources().getStringArray(R.array.list_items_summary);
@@ -145,4 +152,49 @@ public class MainActivity extends Activity {
 
         dialog.show();
     }
+
+	private void showMenu() {
+		final Button btnOpenPopup = (Button)findViewById(R.id.menu_btn);
+		btnOpenPopup.setOnClickListener(new Button.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				LayoutInflater layoutInflater = (LayoutInflater) getBaseContext().getSystemService(LAYOUT_INFLATER_SERVICE);
+				View popupView = layoutInflater.inflate(R.layout.popup, null);
+				final PopupWindow popupWindow = new PopupWindow(popupView, LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
+				popupWindow.setAnimationStyle(R.style.Animation_GetFromTop);
+				//hide on outside click
+				popupWindow.setBackgroundDrawable(new BitmapDrawable());
+				popupWindow.setOutsideTouchable(true);
+				popupWindow.setFocusable(true);
+				popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
+
+				//dim hehind
+				View container = (View) popupWindow.getContentView().getParent();
+				WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
+				WindowManager.LayoutParams p = (WindowManager.LayoutParams) container.getLayoutParams();
+				p.flags = WindowManager.LayoutParams.FLAG_DIM_BEHIND;
+				p.dimAmount = 0.3f;
+				wm.updateViewLayout(container, p);
+
+				Button btnDismiss = (Button) popupView.findViewById(R.id.dismiss);
+				btnDismiss.setOnClickListener(new Button.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						popupWindow.dismiss();
+					}
+				});
+				popupWindow.showAsDropDown(btnOpenPopup, 50, -30);
+
+				TextView install = (TextView) popupView.findViewById(R.id.about_app);
+				install.setOnClickListener(new View.OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						Toast.makeText(MainActivity.this, "Do zrobienia", Toast.LENGTH_LONG).show();
+					}
+				});
+			}
+		});
+	}
 }
