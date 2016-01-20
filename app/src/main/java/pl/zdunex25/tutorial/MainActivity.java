@@ -9,6 +9,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.View;
@@ -132,6 +133,7 @@ public class MainActivity extends Activity {
 		description.setScroller(new Scroller(context));
 		description.setVerticalScrollBarEnabled(true);
 		description.setMovementMethod(new ScrollingMovementMethod());
+		description.setMovementMethod(new LinkMovementMethod());
 
         Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
 		dialogButton.setOnClickListener(new View.OnClickListener() {
