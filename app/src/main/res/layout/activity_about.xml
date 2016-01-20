@@ -6,17 +6,16 @@
     tools:context="pl.zdunex25.tutrial.MainActivity" >
 
     <RelativeLayout
-        android:id="@+id/header"
+        android:id="@+id/header_about"
         android:background="#fffed547"
         android:orientation="horizontal"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="300.0dip"
-        android:layout_gravity="center_vertical"
-        android:layout_above="@+id/content">
+        android:layout_gravity="center_vertical">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/title_about"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
