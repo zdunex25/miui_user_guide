@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.View;
@@ -126,7 +127,7 @@ public class MainActivity extends Activity {
 		TextView header = (TextView) dialog.findViewById(R.id.titlee);
 		header.setText(String.format(getResources().getString(R.string.lets_try2), title));
 		TextView description = (TextView) dialog.findViewById(R.id.text3);
-		description.setText(String.format(getResources().getString(R.string.lets_try), content));
+		description.setText(Html.fromHtml(String.format(getResources().getString(R.string.lets_try), content)));
 		description.setMaxLines(10);
 		description.setScroller(new Scroller(context));
 		description.setVerticalScrollBarEnabled(true);
