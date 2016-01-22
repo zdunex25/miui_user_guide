@@ -49,8 +49,8 @@ public class MainActivity extends Activity {
 	        R.drawable.ic_key_settings,
 	        R.drawable.com_android_camera,
 	        R.drawable.com_android_thememanager,
-	        R.drawable.com_miui_securitycenter
-		
+	        R.drawable.com_miui_securitycenter,
+	        R.drawable.com_android_browser
 	};
 	    
 	@Override
@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
 		// Each row in the list stores country name, opisy and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
  
-        for(int i=0;i<12;i++){
+        for(int i=0;i<13;i++){
             HashMap<String, String> hm = new HashMap<String,String>();
             hm.put("txt", tutuly[i]);
             hm.put("cur", opisy[i]);
@@ -117,6 +117,8 @@ public class MainActivity extends Activity {
                 	showDialog(getResources().getString(R.string.themes), getResources().getString(R.string.themes_summary));
                 } else if(tutuly[i].equals("Korzystanie z uprawnień root")){
                 	showDialog(getResources().getString(R.string.root), getResources().getString(R.string.root_summary));
+                } else if(tutuly[i].equals("Brak wczytywania linków sponsorowanych i reklam")){
+                	showDialog(getResources().getString(R.string.adblock), getResources().getString(R.string.adblock_summary));
                 }
           }
         });
