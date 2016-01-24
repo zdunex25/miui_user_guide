@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
 	        R.drawable.com_miui_securitycenter,
 	        R.drawable.com_android_browser
 	};
-	    
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -194,7 +194,19 @@ public class MainActivity extends Activity {
 
 					@Override
 					public void onClick(View v) {
+						Intent aboutapp = new Intent(MainActivity.this, AboutActivity.class);
+						aboutapp.putExtra("page", "file:///android_asset/contributors.html");
+						startActivity(aboutapp);
+					}
+				});
+
+				TextView system = (TextView) popupView.findViewById(R.id.about_system);
+				system.setOnClickListener(new View.OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
 						Intent aboutapp= new Intent(MainActivity.this, AboutActivity.class);
+						aboutapp.putExtra("page", "file:///android_asset/aboutsystem.html");
 						startActivity(aboutapp);
 					}
 				});

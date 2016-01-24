@@ -7,12 +7,36 @@
 
     <RelativeLayout
         android:id="@+id/header_about"
-        android:background="#fffed547"
+        android:background="#ff2cc6ed"
         android:orientation="horizontal"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="300.0dip"
         android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/backk"
+                android:layout_width="40dip"
+                android:layout_height="37dip"
+                android:layout_gravity="left"
+                android:background="@drawable/action_bar_back_normal_dark" />
+
+            <TextView
+                android:id="@+id/title_backk"
+                android:layout_width="match_parent"
+                android:layout_height="37dip"
+                android:gravity="center_vertical"
+                android:text="MIUIPolska"
+                android:textColor="#b6ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/title_about"

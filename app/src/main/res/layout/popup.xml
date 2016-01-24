@@ -51,6 +51,25 @@
                 android:layout_marginLeft="25dip"
                 android:layout_marginRight="25dip"
                 android:background="#2D000000" />
+
+            <TextView
+                android:id="@+id/about_system"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingTop="12dip"
+                android:paddingBottom="12dip"
+                android:background="@drawable/option_text_bg"
+                android:text="O systemie MIUIPolska" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:background="#2D000000" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
