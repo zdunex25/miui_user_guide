@@ -43,7 +43,7 @@ public class NotifService extends Service {
 			notificationManager.notify(NOTIF_ID, builder.build());
 		}
 		else{
-			Log.d("TAG", "odzznaczony");
+			Log.d("TAG", "odznaczony");
 		}
 	}
 }
