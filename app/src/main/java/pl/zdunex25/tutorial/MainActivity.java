@@ -8,8 +8,10 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.text.method.ScrollingMovementMethod;
@@ -22,6 +24,8 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.Scroller;
@@ -30,10 +34,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-	
+
 	final Context context = this;
 	String[] tutuly;
 	String[] opisy;
+	private CheckBox checkNotification;
 
 	 
 	// Array of integers points to images stored in /res/drawable-ldpi/
@@ -92,7 +97,6 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
 					int i, long id) {
-                // TODO Auto-generated method stub
                 if(tutuly[i].equals("Aktualizacje")){
                 	showDialog(getResources().getString(R.string.updates), getResources().getString(R.string.updates_summary));
                 } else if(tutuly[i].equals("Aktywacja Wiadomości w chmurze lub dodanie lokalizacji w aplikacji Pogoda")){
@@ -171,7 +175,7 @@ public class MainActivity extends Activity {
 				popupWindow.setFocusable(true);
 				popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
 
-				//dim hehind
+				//dim behind
 				View container = (View) popupWindow.getContentView().getParent();
 				WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
 				WindowManager.LayoutParams p = (WindowManager.LayoutParams) container.getLayoutParams();
@@ -183,7 +187,6 @@ public class MainActivity extends Activity {
 				btnDismiss.setOnClickListener(new Button.OnClickListener() {
 					@Override
 					public void onClick(View v) {
-						// TODO Auto-generated method stub
 						popupWindow.dismiss();
 					}
 				});
@@ -210,7 +213,38 @@ public class MainActivity extends Activity {
 						startActivity(aboutapp);
 					}
 				});
+
+				//checkbox for notifications
+				checkNotification = (CheckBox) popupView.findViewById(R.id.checkNotif);
+				checkNotification.setChecked(getFromSP("checkbox1"));
+				checkNotification.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+					@Override
+					public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+						if (checkNotification.isChecked()) {
+							saveInSP("checkbox1", true);
+                            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+                            prefs.edit().putBoolean("checkeddd",true).apply();
+						} else {
+							saveInSP("checkbox1", false);
+                            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+                            prefs.edit().putBoolean("checkeddd",false).apply();
+						}
+					}
+				});
 			}
 		});
+	}
+
+	private boolean getFromSP(String key){
+		SharedPreferences preferences = getApplicationContext().getSharedPreferences("likeitmatters", android.content.Context.MODE_PRIVATE);
+		return preferences.getBoolean(key, false);
+	}
+
+	private void saveInSP(String key, boolean value){
+		SharedPreferences preferences = getApplicationContext().getSharedPreferences("likeitmatters", android.content.Context.MODE_PRIVATE);
+		SharedPreferences.Editor editor = preferences.edit();
+		editor.putBoolean(key, value);
+		editor.commit();
 	}
 }

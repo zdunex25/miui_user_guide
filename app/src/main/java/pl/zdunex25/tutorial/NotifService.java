@@ -6,8 +6,11 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.IBinder;
+import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 
 public class NotifService extends Service {
 	private static final int NOTIF_ID = 1;
@@ -30,6 +33,17 @@ public class NotifService extends Service {
 		    .setContentIntent(contentIntent)
 		    .setAutoCancel(true);
 		NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
-		notificationManager.notify(NOTIF_ID, builder.build());
+
+		//checkbox state
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		boolean checked = prefs.getBoolean("checkeddd", false);
+
+		if (checked){
+			Log.d("TAG", "zaznaczony");
+			notificationManager.notify(NOTIF_ID, builder.build());
+		}
+		else{
+			Log.d("TAG", "odzznaczony");
+		}
 	}
 }
