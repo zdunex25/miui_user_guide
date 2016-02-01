@@ -237,12 +237,12 @@ public class MainActivity extends Activity {
 	}
 
 	private boolean getFromSP(String key){
-		SharedPreferences preferences = getApplicationContext().getSharedPreferences("likeitmatters", android.content.Context.MODE_PRIVATE);
+		SharedPreferences preferences = getApplicationContext().getSharedPreferences("likeitmatters", android.content.Context.MODE_MULTI_PROCESS);
 		return preferences.getBoolean(key, false);
 	}
 
 	private void saveInSP(String key, boolean value){
-		SharedPreferences preferences = getApplicationContext().getSharedPreferences("likeitmatters", android.content.Context.MODE_PRIVATE);
+		SharedPreferences preferences = getApplicationContext().getSharedPreferences("likeitmatters", android.content.Context.MODE_MULTI_PROCESS);
 		SharedPreferences.Editor editor = preferences.edit();
 		editor.putBoolean(key, value);
 		editor.commit();
