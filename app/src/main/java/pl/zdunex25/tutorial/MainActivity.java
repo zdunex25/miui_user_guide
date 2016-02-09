@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.Html;
@@ -176,7 +177,12 @@ public class MainActivity extends Activity {
 				popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
 
 				//dim behind
-				View container = (View) popupWindow.getContentView().getParent();
+				final View container;
+				if (Build.VERSION.SDK_INT >= 23) {
+					container = (View) popupWindow.getContentView().getParent().getParent();
+				} else {
+					container = (View) popupWindow.getContentView().getParent();
+				}
 				WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
 				WindowManager.LayoutParams p = (WindowManager.LayoutParams) container.getLayoutParams();
 				p.flags = WindowManager.LayoutParams.FLAG_DIM_BEHIND;
