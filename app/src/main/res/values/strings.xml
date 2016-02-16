@@ -15,6 +15,7 @@
     <string name="themes">Motywy</string>
     <string name="root">Root</string>
     <string name="adblock">Blokowanie reklam</string>
+    <string name="locked">Zablokowany bootloader</string>
 
     <string name="updates_summary"><![CDATA[Aktualizacje pojawiają się w każdy piątek. Nie usuwają danych i nie wymagają wipe. Aby uniknąć problemów zalecane jest zapoznanie się z wątkiem na forum poświęconemu danej aktualizacji. Przed zainstalowaniem aktualizacji zalecane jest zrobić <b>Kopię zapasową systemu MIUI</b> (Ustawienia > Urządzenie > Kopia i kasowanie danych).<br /><br />
     W systemie MIUIPolska nie ma aktualizacji OTA, należy pobrać i instalować nowe ROMy ręcznie. Pobieramy je ze strony <a href="https://miuipolska.pl/download/">Pobierz MIUI</a>. <b>Pamiętaj, aby wybrać odpowiedni plik dla Twojego urządzenia!</b>. Po pobraniu pliku zip trzeba umieścić go w <b>pamięci wewnętrznej</b> urządzenia. Następnie włączamy aplikację <b>Aktualizacje</b>, klikamy na <b>wielokropek</b>, który znajduje się w prawym górnym rogu i wybieramy <b>Zainstaluj aktualizację z pliku zip</b>. Powinien pojawić się eksplorator plików, w którym wybieramy pobrany uprzednio plik z systemem. Telefon przechodzi w tryb recovery (na niektórych urządzeniach z serii MI robi się to z poziomu aplikacji), gdzie instaluje system, a następnie restartuje się do zaktualizowanej wersji systemu.<br /><br />
@@ -39,7 +40,9 @@
     <string name="root_summary"><![CDATA[System ma wbudowany root i aplikację do zarządzania nim. Jednak nie są wyświetlane powiadomienia z prośbą o przyznanie uprawnień root, jak również o korzystaniu z nich w danym momencie. Aby z niego skorzystać musimy najpierw doprowadzić w danej aplikacji do sytuacji, w której poprosiłaby o niego. Następnie zamykamy ją i wchodzimy w <b>Panel sterowania > Uprawnienia > Dostęp do root</b>, gdzie możemy włączyć aplikacji dostęp do niego.<br /><br />
     <b><font color=#f37981>UWAGA!: Jako, że root to najwyższe możliwe uprawnienia dla użytkownika i aplikacji, korzystanie z niego w sposób nieodpowiedzialny może być niebezpieczne! Zachowaj rozsądek, inaczej możesz zostać zmuszony do reinstalacji całego systemu lub konieczności odesłania telefonu do serwisu. Niezalecane jest również instalowanie innych aplikacji do zarządzania uprawnieniami root (np. SuperSU), gdyż również może to spowodować uszkodzenie systemu, a w niektórych przypadkach nawet telefonu.</b></font>]]></string>
     <string name="adblock_summary"><![CDATA[W systemie znajduje się standardowo <b>blokowanie reklam</b> (plik system/etc/hosts). Taka blokada może powodować m. in. brak wczytywania sponsorowanych wyszukiwań w google i innych reklam. Możemy zainstalować aplikację <b>Adaway</b>, w której można dododać wybrane hosty do białej listy, lub <b>przywrócić domyślny dla androida plik hosts</b> i całkowicie wyłączyć blokowanie reklam.]]></string>
-    
+    <string name="locked_summary"><![CDATA[Nowe telefony Xiaomi od 2015/2016 roku mają zablokowany bootloader, który nie pozwala na instalację romów innych niż oficjalne Xiaomi, w tym MIUIPolska. Aby odblokować bootloader należy złożyć zgłoszenie do MIUI wg <a href="https://goo.gl/QQiJKN">instrukcji na forum</a>.<br /><br />
+    Dotyczy: modeli z 2016 roku (Mi5, Redmi Note 3, Redmi 3) i modeli Mi4c, MiNote Pro (w przypadku niekorzystania już z MIUIPolska).]]></string>
+
     <string name="lets_try">%1$s</string>
     <string name="lets_try2">%1$s</string>
 
@@ -59,6 +62,7 @@
         <item>Brak wczytywania linków sponsorowanych i reklam</item>
         <item>Diagnostyka urządzenia</item>
         <item>Połączenie USB z komputerem</item>
+        <item>Jak odblokować bootloader?</item>
     </string-array>
     <string-array name="list_items_summary">
         <item>Poprawne wgrywanie nowych wersji</item>
@@ -76,6 +80,7 @@
         <item>Reklamy nie zawsze niechciane</item>
         <item>Sprawdź czujniki/podzespoły</item>
         <item>Kiedy przypadkowo odznaczysz oba tryby MTP oraz PTP</item>
+        <item>Dotyczy: Mi5, Redmi Note 3, Redmi 3 oraz Mi4c, MiNote Pro</item>
     </string-array>
 
 </resources>
