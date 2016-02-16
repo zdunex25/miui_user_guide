@@ -59,7 +59,8 @@ public class MainActivity extends Activity {
 	        R.drawable.com_miui_securitycenter,
 	        R.drawable.com_android_browser,
 	        R.drawable.ic_development_settings,
-	        R.drawable.ic_android_beam_settings
+	        R.drawable.ic_android_beam_settings,
+	        R.drawable.ic_unlock_set_settings
 	};
 
 	@Override
@@ -74,7 +75,7 @@ public class MainActivity extends Activity {
 		// Each row in the list stores country name, opisy and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
  
-        for(int i=0;i<15;i++){
+        for(int i=0;i<16;i++){
             HashMap<String, String> hm = new HashMap<String,String>();
             hm.put("txt", tutuly[i]);
             hm.put("cur", opisy[i]);
@@ -133,9 +134,11 @@ public class MainActivity extends Activity {
                 	context.startActivity(cit);
                 } else if(tutuly[i].equals("Połączenie USB z komputerem")){
                 	Intent usb = new Intent();
-					usb.setClassName("com.android.settings", "com.android.settings.UsbSettings");
+                	usb.setClassName("com.android.settings", "com.android.settings.UsbSettings");
                 	context.startActivity(usb);
-				}
+                } else if(tutuly[i].equals("Jak odblokować bootloader?")){
+                	showDialog(getResources().getString(R.string.locked), getResources().getString(R.string.locked_summary));
+                }
           }
         });
 	}
