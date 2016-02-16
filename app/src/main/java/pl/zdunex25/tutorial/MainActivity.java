@@ -40,6 +40,7 @@ public class MainActivity extends Activity {
 	String[] tutuly;
 	String[] opisy;
 	private CheckBox checkNotification;
+    private String device = Build.DEVICE;
 
 	 
 	// Array of integers points to images stored in /res/drawable-ldpi/
@@ -174,12 +175,26 @@ public class MainActivity extends Activity {
 				LayoutInflater layoutInflater = (LayoutInflater) getBaseContext().getSystemService(LAYOUT_INFLATER_SERVICE);
 				View popupView = layoutInflater.inflate(R.layout.popup, null);
 				final PopupWindow popupWindow = new PopupWindow(popupView, LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
-				popupWindow.setAnimationStyle(R.style.Animation_GetFromTop);
+                popupWindow.setAnimationStyle(R.style.Animation_GetFromTop);
 				//hide on outside click
-				popupWindow.setBackgroundDrawable(new BitmapDrawable());
-				popupWindow.setOutsideTouchable(true);
+                popupWindow.setBackgroundDrawable(new BitmapDrawable());
+                popupWindow.setOutsideTouchable(true);
 				popupWindow.setFocusable(true);
-				popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
+				//popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
+                float density = context.getResources().getDisplayMetrics().density;
+                if (density >= 4.0) {
+                    //return "xxxhdpi";
+                }
+                else if (density >= 3.0) {
+                    popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
+                }
+                else if (density >= 2.0) {
+                    if (device.matches("mocha|latte")) {
+                        popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
+                    } else {
+                        popupWindow.showAsDropDown(btnOpenPopup, 50, -120);
+                    }
+                }
 
 				//dim behind
 				final View container;
