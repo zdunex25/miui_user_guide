@@ -58,6 +58,7 @@
         <item>Korzystanie z uprawnień root</item>
         <item>Brak wczytywania linków sponsorowanych i reklam</item>
         <item>Diagnostyka urządzenia</item>
+        <item>Połączenie USB z komputerem</item>
     </string-array>
     <string-array name="list_items_summary">
         <item>Poprawne wgrywanie nowych wersji</item>
@@ -74,6 +75,7 @@
         <item>Przeznaczone dla zaawansowanych</item>
         <item>Reklamy nie zawsze niechciane</item>
         <item>Sprawdź czujniki/podzespoły</item>
+        <item>Kiedy przypadkowo odznaczysz oba tryby MTP oraz PTP</item>
     </string-array>
 
 </resources>
