@@ -56,7 +56,8 @@ public class MainActivity extends Activity {
 	        R.drawable.com_android_camera,
 	        R.drawable.com_android_thememanager,
 	        R.drawable.com_miui_securitycenter,
-	        R.drawable.com_android_browser
+	        R.drawable.com_android_browser,
+	        R.drawable.ic_development_settings
 	};
 
 	@Override
@@ -71,7 +72,7 @@ public class MainActivity extends Activity {
 		// Each row in the list stores country name, opisy and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
  
-        for(int i=0;i<13;i++){
+        for(int i=0;i<14;i++){
             HashMap<String, String> hm = new HashMap<String,String>();
             hm.put("txt", tutuly[i]);
             hm.put("cur", opisy[i]);
@@ -124,6 +125,10 @@ public class MainActivity extends Activity {
                 	showDialog(getResources().getString(R.string.root), getResources().getString(R.string.root_summary));
                 } else if(tutuly[i].equals("Brak wczytywania linków sponsorowanych i reklam")){
                 	showDialog(getResources().getString(R.string.adblock), getResources().getString(R.string.adblock_summary));
+                } else if(tutuly[i].equals("Diagnostyka urządzenia")){
+                	Intent cit = new Intent();
+                	cit.setClassName("com.miui.cit", "com.miui.cit.CitLauncherActivity");
+                	context.startActivity(cit);
                 }
           }
         });

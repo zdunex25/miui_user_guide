@@ -15,7 +15,7 @@
     <string name="themes">Motywy</string>
     <string name="root">Root</string>
     <string name="adblock">Blokowanie reklam</string>
-    
+
     <string name="updates_summary"><![CDATA[Aktualizacje pojawiają się w każdy piątek. Nie usuwają danych i nie wymagają wipe. Aby uniknąć problemów zalecane jest zapoznanie się z wątkiem na forum poświęconemu danej aktualizacji. Przed zainstalowaniem aktualizacji zalecane jest zrobić <b>Kopię zapasową systemu MIUI</b> (Ustawienia > Urządzenie > Kopia i kasowanie danych).<br /><br />
     W systemie MIUIPolska nie ma aktualizacji OTA, należy pobrać i instalować nowe ROMy ręcznie. Pobieramy je ze strony <a href="https://miuipolska.pl/download/">Pobierz MIUI</a>. <b>Pamiętaj, aby wybrać odpowiedni plik dla Twojego urządzenia!</b>. Po pobraniu pliku zip trzeba umieścić go w <b>pamięci wewnętrznej</b> urządzenia. Następnie włączamy aplikację <b>Aktualizacje</b>, klikamy na <b>wielokropek</b>, który znajduje się w prawym górnym rogu i wybieramy <b>Zainstaluj aktualizację z pliku zip</b>. Powinien pojawić się eksplorator plików, w którym wybieramy pobrany uprzednio plik z systemem. Telefon przechodzi w tryb recovery (na niektórych urządzeniach z serii MI robi się to z poziomu aplikacji), gdzie instaluje system, a następnie restartuje się do zaktualizowanej wersji systemu.<br /><br />
     Obecnie posiadaną wersję możemy sprawdzić także w aplikacji <b>Aktualizacje</b>. Format numeru wersji to (ostatnia cyfra roku).(miesiąc).(dzień)]]></string>
@@ -57,6 +57,7 @@
         <item>Mieszanie elementów z różnych motywów</item>
         <item>Korzystanie z uprawnień root</item>
         <item>Brak wczytywania linków sponsorowanych i reklam</item>
+        <item>Diagnostyka urządzenia</item>
     </string-array>
     <string-array name="list_items_summary">
         <item>Poprawne wgrywanie nowych wersji</item>
@@ -72,6 +73,7 @@
         <item>MIUI7 - Yours by design!</item>
         <item>Przeznaczone dla zaawansowanych</item>
         <item>Reklamy nie zawsze niechciane</item>
+        <item>Sprawdź czujniki/podzespoły</item>
     </string-array>
 
 </resources>
