@@ -8,8 +8,10 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.BatteryManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -134,9 +136,17 @@ public class MainActivity extends Activity {
                 	cit.setClassName("com.miui.cit", "com.miui.cit.CitLauncherActivity");
                 	context.startActivity(cit);
                 } else if(tutuly[i].equals("Połączenie USB z komputerem")){
-                	Intent usb = new Intent();
-                	usb.setClassName("com.android.settings", "com.android.settings.UsbSettings");
-                	context.startActivity(usb);
+                	IntentFilter ifilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+                	Intent batteryStatus = context.registerReceiver(null, ifilter);
+                	int chargePlug = batteryStatus.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
+                	boolean usbCharge = chargePlug == BatteryManager.BATTERY_PLUGGED_USB;
+                	if (usbCharge) {
+                    	Intent usb = new Intent();
+                    	usb.setClassName("com.android.settings", "com.android.settings.UsbSettings");
+                    	context.startActivity(usb);
+                	} else {
+                    	Toast.makeText(MainActivity.this, "Podłącz urządzenie do komputera!", Toast.LENGTH_LONG).show();
+                	}
                 } else if(tutuly[i].equals("Jak odblokować bootloader?")){
                 	showDialog(getResources().getString(R.string.locked), getResources().getString(R.string.locked_summary));
                 } else if(tutuly[i].equals("Jak oczyścić cache/dalvik?")){
