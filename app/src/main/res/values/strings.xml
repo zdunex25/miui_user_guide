@@ -43,9 +43,12 @@
     <string name="adblock_summary"><![CDATA[W systemie znajduje się standardowo <b>blokowanie reklam</b> (plik system/etc/hosts). Taka blokada może powodować m. in. brak wczytywania sponsorowanych wyszukiwań w google i innych reklam. Możemy zainstalować aplikację <b>Adaway</b>, w której można dododać wybrane hosty do białej listy, lub <b>przywrócić domyślny dla androida plik hosts</b> i całkowicie wyłączyć blokowanie reklam.]]></string>
     <string name="locked_summary"><![CDATA[Nowe telefony Xiaomi od 2015/2016 roku mają zablokowany bootloader, który nie pozwala na instalację romów innych niż oficjalne Xiaomi, w tym MIUIPolska. Aby odblokować bootloader należy złożyć zgłoszenie do MIUI wg <a href="https://goo.gl/QQiJKN">instrukcji na forum</a>.<br /><br />
     Dotyczy: modeli z 2016 roku (Mi5, Redmi Note 3, Redmi 3) i modeli Mi4c, MiNote Pro (w przypadku niekorzystania już z MIUIPolska).]]></string>
-    <string name="cache_summary"><![CDATA[Aby wykonać czyszczenie pamięci podręcznej w TWRP należy wejść w zakładkę <b>Wipe</b>, następnie <b>Advanced Wipe</b> tam zaznaczyć: <b>Cache oraz Dalvik/ART Cache</b> i przesunąć suwak z napisem <b>Swipe to Wipe</b> w prawo. Po tej operacji możemy nacisnąć <b>Reboot System</b>.<br /><br />
-    W TWRP starszym niż 3.0 <b>Dalvik/ART Cache</b> jest nazwane po prostu <b>Dalvik Cache</b>, jest to dokładnie to samo.<br /><br />
-    Z kolei by wykonać czyszczenie pamięci podręcznej w MiRecovery należy wejść w aplikację <b>Aktualizacje</b>, wybrać <b>MENU > Uruchom w recovery</b>, następnie zaznaczyć <b>English</b> i kolejno > <b>Wipe & Reset > Wipe Cache > Yes</b>. Po tej operacji wybieramy <b>Back > Reboot > Reboot to system (ten z dopiskiem latest)</b>.]]></string>
+    <string name="cache_summary"><![CDATA[Aby wykonać czyszczenie pamięci podręcznej należy wejść w aplikację <b>Aktualizacje</b>, wybrać <b>MENU > Uruchom w recovery</b>.<br /><br /><br />
+    <b>TWRP:</b><br />
+    Wejść w zakładkę <b>Wipe</b>, następnie <b>Advanced Wipe</b> tam zaznaczyć: <b>Cache oraz Dalvik/ART Cache</b> i przesunąć suwak z napisem <b>Swipe to Wipe</b> w prawo. Po tej operacji możemy nacisnąć <b>Reboot System</b>.<br />
+    W TWRP starszym niż 3.0 <b>Dalvik/ART Cache</b> jest nazwane po prostu <b>Dalvik Cache</b>, jest to dokładnie to samo.<br /><br /><br />
+    <b>MiRecovery:</b><br />
+    Zaznaczyć <b>English</b> i kolejno > <b>Wipe & Reset > Wipe Cache > Yes</b>. Po tej operacji wybieramy <b>Back > Reboot > Reboot to system (ten z dopiskiem latest)</b>.]]></string>
 
     <string name="lets_try">%1$s</string>
     <string name="lets_try2">%1$s</string>
