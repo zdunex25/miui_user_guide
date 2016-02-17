@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
 	        R.drawable.ic_development_settings,
 	        R.drawable.ic_android_beam_settings,
 	        R.drawable.ic_unlock_set_settings,
-            R.drawable.ic_bt_unknown
+	        R.drawable.ic_bt_unknown
 	};
 
 	@Override
