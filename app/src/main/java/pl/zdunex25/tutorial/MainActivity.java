@@ -43,6 +43,7 @@ public class MainActivity extends Activity {
 	String[] opisy;
 	private CheckBox checkNotification;
     private String device = Build.DEVICE;
+	final String PREFS_NAME = "MyFirstTime";
 
 	 
 	// Array of integers points to images stored in /res/drawable-ldpi/
@@ -74,7 +75,7 @@ public class MainActivity extends Activity {
 
 		tutuly = getResources().getStringArray(R.array.list_items);
 		opisy = getResources().getStringArray(R.array.list_items_summary);
-		
+
 		// Each row in the list stores country name, opisy and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
  
@@ -204,7 +205,7 @@ public class MainActivity extends Activity {
 				//popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
                 float density = context.getResources().getDisplayMetrics().density;
                 if (density >= 4.0) {
-					popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
+                    popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
                 }
                 else if (density >= 3.0) {
                     popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
@@ -265,8 +266,13 @@ public class MainActivity extends Activity {
 				});
 
 				//checkbox for notifications
+				SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
 				checkNotification = (CheckBox) popupView.findViewById(R.id.checkNotif);
 				checkNotification.setChecked(getFromSP("checkbox1"));
+				if (settings.getBoolean("my_first_time", true)) {
+					checkNotification.setChecked(true);
+					settings.edit().putBoolean("my_first_time", false).commit();
+				}
 				checkNotification.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
 					@Override
