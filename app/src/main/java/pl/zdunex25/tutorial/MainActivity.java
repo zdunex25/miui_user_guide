@@ -204,7 +204,7 @@ public class MainActivity extends Activity {
 				//popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
                 float density = context.getResources().getDisplayMetrics().density;
                 if (density >= 4.0) {
-                    //return "xxxhdpi";
+					popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
                 }
                 else if (density >= 3.0) {
                     popupWindow.showAsDropDown(btnOpenPopup, 50, -220);
@@ -215,6 +215,9 @@ public class MainActivity extends Activity {
                     } else {
                         popupWindow.showAsDropDown(btnOpenPopup, 50, -120);
                     }
+                }
+                else if (density >= 1.5) {
+                    popupWindow.showAsDropDown(btnOpenPopup, 50, -120);
                 }
 
 				//dim behind
