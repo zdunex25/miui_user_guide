@@ -43,8 +43,6 @@ public class MainActivity extends Activity {
 	String[] opisy;
 	private CheckBox checkNotification;
     private String device = Build.DEVICE;
-	final String PREFS_NAME = "MyFirstTime";
-
 	 
 	// Array of integers points to images stored in /res/drawable-ldpi/
 	int[] flags = new int[]{
@@ -266,13 +264,8 @@ public class MainActivity extends Activity {
 				});
 
 				//checkbox for notifications
-				SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
 				checkNotification = (CheckBox) popupView.findViewById(R.id.checkNotif);
 				checkNotification.setChecked(getFromSP("checkbox1"));
-				if (settings.getBoolean("my_first_time", true)) {
-					checkNotification.setChecked(true);
-					settings.edit().putBoolean("my_first_time", false).commit();
-				}
 				checkNotification.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
 					@Override
