@@ -287,7 +287,7 @@ public class MainActivity extends Activity {
 
 	private boolean getFromSP(String key){
 		SharedPreferences preferences = getApplicationContext().getSharedPreferences("likeitmatters", android.content.Context.MODE_MULTI_PROCESS);
-		return preferences.getBoolean(key, false);
+		return preferences.getBoolean(key, true);
 	}
 
 	private void saveInSP(String key, boolean value){
