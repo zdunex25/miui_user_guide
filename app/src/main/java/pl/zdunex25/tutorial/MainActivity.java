@@ -3,13 +3,16 @@ package pl.zdunex25.tutorial;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.BatteryManager;
 import android.os.Build;
@@ -41,6 +44,7 @@ public class MainActivity extends Activity {
 	final Context context = this;
 	String[] tutuly;
 	String[] opisy;
+	String jezyk;
 	private CheckBox checkNotification;
     private String device = Build.DEVICE;
 	 
@@ -73,6 +77,15 @@ public class MainActivity extends Activity {
 
 		tutuly = getResources().getStringArray(R.array.list_items);
 		opisy = getResources().getStringArray(R.array.list_items_summary);
+		jezyk = Locale.getDefault().getLanguage();
+
+		if (jezyk.contains("pl")) {
+			//Do nothing
+		} else {
+			PackageManager p = getPackageManager();
+			ComponentName componentName = new ComponentName(this, MainActivity.class);
+			p.setComponentEnabledSetting(componentName,PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+		}
 
 		// Each row in the list stores country name, opisy and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
