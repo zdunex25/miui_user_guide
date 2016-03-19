@@ -36,7 +36,7 @@ public class NotifService extends Service {
 
 		//checkbox state
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-		boolean checked = prefs.getBoolean("checkeddd", false);
+		boolean checked = prefs.getBoolean("checkeddd", true);
 
 		if (checked){
 			Log.d("TAG", "zaznaczony");
