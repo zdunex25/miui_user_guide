@@ -6,6 +6,7 @@
     <string name="cloudmsg">Wiadomości i lokalizacja</string>
     <string name="recents">Miniatury</string>
     <string name="startup">Autostart</string>
+    <string name="battery">Bateria</string>
     <string name="layout">Edycja pulpitu</string>
     <string name="popups">Dymki czatu i popupy</string>
     <string name="downloads">Pobieranie po 3G/4G</string>
@@ -24,7 +25,15 @@
     <string name="cloudmsg_summary"><![CDATA[Pogoda oraz chmura wymagają przełączenia się na języka angielski w telefonie. Robimy to w <b>Ustawienia > Urządzenie > Język i klawiatura > Język</b>. Po skonfigurowaniu możemy śmiało wrócić do ojczystego języka.]]></string>
     <string name="recents_summary"><![CDATA[Podgląd aplikacji w menu ostatnich aplikacji włączamy w dwóch krokach. Najpierw wchodzimy w <b>Ustawienia > Urządzenie > Bateria i wydajność > Animacje systemu</b> i wybieramy opcję <b>Pokaż animacje systemowe</b> po czym telefon się zrestartuje. Następnie włączamy menu ostatnich aplikacji i wykonujemy gest odszczypnięcia (palce się rozchodzą).]]></string>
     <string name="startup_summary"><![CDATA[Aplikacje po instalacji nie mają uprawnień do automatycznego uruchamiania w tle, przez co nie będziemy otrzymywać powiadomień z aplikacji takich jak Whatsapp, Facebook, Hangouts itp. Także słuchając radia internetowego, w chwili wygaszenia ekranu, radio w 90% przypadków zostanie zatrzymana przez system. Dlatego ważne jest, by umożliwić swoim aplikacjom poprawne działanie. Udajemy się do <b>Panelu Sterowania > Uprawnienia > Autostart</b> by aktywować przełącznik dla wybranych aplikacji.<br /><br />
-    Niektóre aplikacje, pomimo tego, że zostały dodane do autostartu mogą nadal być zatrzymywane przez system (rzadko, ale jednak zdarza się). W takiej sytuacji należy uruchomić daną aplikację, kliknąć przycisk <b>HOME</b>, następnie <b>MENU</b> (widok ostatnich aplikacji) i przeciągnąć ikonę/miniaturę danej aplikacji w dół. Po poprawnym wykonaniu powinna pojawić się kłódka w prawym górnym rogu ikony w podglądzie aplikacji.]]></string>
+    Niektóre aplikacje, pomimo tego, że zostały dodane do autostartu mogą nadal być zatrzymywane przez system (rzadko, ale jednak zdarza się). W takiej sytuacji należy uruchomić daną aplikację, kliknąć przycisk <b>HOME</b>, następnie <b>MENU</b> (widok ostatnich aplikacji) i przeciągnąć ikonę/miniaturę danej aplikacji w dół. Po poprawnym wykonaniu powinna pojawić się kłódka w prawym górnym rogu ikony w podglądzie aplikacji.<br /><br />
+    <b>WAŻNE!:</b> W ostatnich tygodniach MIUI udoskonaliło funkcję <b>oszczędzania baterii</b>, więcej informacji w zakładce Oszczędzanie baterii w głównym menu.]]></string>
+    <string name="battery_summary"><![CDATA[W ostatnich tygodniach funkcja oszczędzania baterii doczekała się wielu usprawnień i tym samym uzyskała priorytet nad <b>Autostartem</b> oraz tzw. <b>Kłódką</b> co w praktyce oznacza iż dane uruchomionych aplikacji są odświeżane zbiorowo w inteligentnych interwałach. Mówiąc bardziej potocznie system zamiast odświeżać dane dla każdej aplikacji z osobna robi to co jakiś czas dla wszystkich aplikacji jednocześnie.<br><br>
+	Skoro wiesz już, że oszczędność wpływa na działanie aplikacji w tle masz dwie możliwości:<br>
+	1) Wyłączyć oszczędność (<b>Ustawienia > Urządzenie > Bateria i Wydajność > Oszczędzanie baterii > <u>Nie blokuj</u></b>)<br>
+	2) Korzystać z wyjątków (<b>Ustawienia > Urządzenie > Bateria i Wydajność > Oszczędzanie baterii, Tryb Normalny</b> i wyżej <b>Wybierz aplikacje</b>)<br><br>
+	Jeżeli nie chcesz kombinować i jednocześnie otrzymywać powiadomienia z aplikacji jak najszybciej rozważ wariant pierwszy. Natomiast by zobrazować wariant drugi posłużę się dwoma przykładami.<br><br>
+	Używając oszczędność oraz Endomondo można być pewnym, że <u>w chwilę po wygaszeniu ekranu aplikacje przestanie rejestrować trasę</u>. Co zrobić? W menu wyboru aplikacji kliknąć przykładowo Endomondo, następnie <b>zachowanie aplikacji w tle</b> ustawić na <b>Bez ograniczeń</b> oraz <b>lokalizacja w tle</b> na <b>Zezwól</b>.<br>
+	Korzystając z radia internetowego po wygaszeniu ekranu telefon zamilknie. Co zrobić? To samo co z Endomondo jednak nie musimy tu zawalać na lokalizowanie w tle.]]></string>
     <string name="layout_summary"><![CDATA[Do edycji pulpitu możemy się dostać na dwa sposoby:<br />
     1) szczypiąc go dwoma palcami<br />
     2) przytrzymując przycisk MENU<br /><br />
@@ -60,6 +69,7 @@
         <item>Aktywacja Wiadomości w chmurze lub dodanie lokalizacji w aplikacji Pogoda</item>
         <item>Brak miniatur w ostatnich aplikacjach</item>
         <item>Działanie aplikacji w tle</item>
+        <item>Oszczędzanie baterii</item>
         <item>Edycja pulpitu</item>
         <item>Niedziałające dymki i przejścia do aplikacji Messenger</item>
         <item>Oczekiwanie na Wi-Fi w Sklepie Play i innych</item>
@@ -79,6 +89,7 @@
         <item>Ograniczenia związane z lokalizacją</item>
         <item>Opcjonalne zmiany estetyczne</item>
         <item>Co i jak z autostartem</item>
+        <item>Ciąg dalszy o działaniu w tle</item>
         <item>Dostosuj ekran do swoich potrzeb</item>
         <item>Ułatw sobie życie z popupami</item>
         <item>Znoszenie limitów</item>
